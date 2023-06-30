@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/table.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Static Page</title>
+    <style>
+      * {
+        padding: 0%;
+        margin: 0%;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+      .title {
+        font-size: 30px;
+        font-weight: 800;
+        letter-spacing: 2px;
+      }
+      body {
+        background-color: burlywood;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+      }
+      span {
+        text-decoration: underline;
+        color: lightblue;
+      }
+      .image img {
+        vertical-align: middle;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        box-shadow: 0 0 10px royalblue;
+      }
+      .review-card {
+        background-color: white;
+        width: 40%;
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 5px;
+        box-shadow: 2px 3px 20px black;
+        margin-top: 40px;
+      }
+      #name {
+        font-size: 25px;
+        padding: 5px;
+      }
+      #job-title {
+        font-size: 20px;
+        font-weight: 700;
+        color: royalblue;
+        padding: 5px;
+        margin-bottom: 20px;
+      }
+      #job-description {
+        font-size: 15px;
+        letter-spacing: 1px;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      #previous-round,
+      #next-round {
+        text-decoration: none;
+        font-size: 20px;
+        color: royalblue;
+        cursor: pointer;
+      }
+      #previous-round:hover,
+      #next-round:hover {
+        font-size: 30px;
+      }
+      .surprise {
+        margin-top: 10px;
+      }
+      #click-to-surprise {
+        cursor: pointer;
+        color: royalblue;
+      }
+      hr {
+        background-color: royalblue;
+        height: 4px;
+        width: 110px;
+      }
+    </style>
+  	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js" id="external-js"></script>
+</head>
+  <body>
+    <!--title-->
+    <h1 class="title">Our Review</h1>
+    <hr />
+
+    <div class="review-card">
+      <!--card start-->
+      <div class="image">
+        <img src="avatar/1st.png" alt="Avatar" id="userimage" />
+      </div>
+      <h3 id="name">Olivia Wilson</h3>
+      <p id="job-title">GRAPHIC DESIGNER</p>
+      <p id="job-description">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
+        veritatis laboriosam praesentium mollitia temporibus, dolorum
+        repudiandae odio enim nam, quam ea quae? Nulla, mollitia magni.
+      </p>
+
+      <!-- next and previous buttons -->
+      <div class="buttons">
+        <button id="previous-round">
+          <i class="fa fa-angle-left"></i>
+        </button>
+        <button id="next-round">
+          <i class="fa fa-angle-right"></i>
+        </button>
+      </div>
+
+      <!--surprise button-->
+      <div class="surprise">
+        <button id="click-to-surprise">surprise</button>
+      </div>
+      <!--card end-->
+    </div>
+
+    <script src="./DOM.js"></script>
+  </body>
+</html>
